@@ -12,7 +12,12 @@ function Credits() {
           {credits.map((item) => (
             <li key={item.file}>
               {item.subject} – {item.author} ({item.license}) –{' '}
-              <a href={item.source} target="_blank" rel="noopener noreferrer">
+              <a
+                href={item.source}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`View source of ${item.subject} photo (opens in a new tab)`}
+              >
                 View source
               </a>
             </li>

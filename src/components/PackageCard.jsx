@@ -28,7 +28,7 @@ function PackageCard({ pkg, short = false }) {
                 <li key={place}>{place}</li>
               ))}
             </ul>
-            <Link to={`/contact?package=${pkg.id}`} className="btn" aria-label={`Book ${pkg.name}`}>
+            <Link to={`/contact?package=${pkg.id}`} className="btn" aria-label={`Book Now – ${pkg.name}`}>
               Book Now
             </Link>
           </>
